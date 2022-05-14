@@ -1,2 +1,6 @@
 We can refer to other elements in DOM with their relationship (e.g. Parent relation, sibling relation)
 
+element.querySelector(selector) returns a reference to the first match of selector
+element.querySelectorAll(selectors) returns a “nodelist” containing references to all of the matches of the selectors
+
+It’s important to note that when using querySelectorAll, the return value is not an array. It looks like an array, and it somewhat acts like an array, but it’s really a “nodelist”.
