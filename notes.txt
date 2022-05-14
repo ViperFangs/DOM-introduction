@@ -13,3 +13,5 @@ This function does NOT put your new element into the DOM - it simply creates it 
 To append a new element into DOM we use:
 parentNode.appendChild(childNode) appends childNode as the last child of parentNode
 parentNode.insertBefore(newNode, referenceNode) inserts newNode into parentNode before referenceNode
+
+parentNode.removeChild(child) removes child from parentNode on the DOM and returns a reference to child
