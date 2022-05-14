@@ -7,3 +7,5 @@ It’s important to note that when using querySelectorAll, the return value is n
 if problems arise, is to convert the nodelist into an array. You can do this with Array.from() or the spread operator
 
 document.createElement(tagName, [options]) creates a new element of tag type tagName. [options] in this case means you can add some optional parameters to the function.
+e.g. const div = document.createElement('div');
+This function does NOT put your new element into the DOM - it simply creates it in memory.
