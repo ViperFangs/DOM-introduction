@@ -1,0 +1,2 @@
+We can refer to other elements in DOM with their relationship (e.g. Parent relation, sibling relation)
+
