@@ -1,6 +1,27 @@
 const container = document.querySelector('#container');
 
-const content = document.createElement('div');
-content.classList.add('content');
-content.textContent = 'This is the glorious text-content!';
-container.appendChild(content);
+const p1 = document.createElement('p');
+p1.textContent = 'Hey I\'m red';
+console.log(p1);
+container.appendChild(p1);
+
+const heading = document.createElement('h3');
+heading.textContent = 'I\'m a blue h3';
+container.appendChild(heading);
+
+const divContainer = document.createElement('div');
+
+/* const divStyle = divContainer.style;
+divStyle.cssText = 'border: 2px black solid; background-color: pink;'; */
+
+divContainer.setAttribute('style', 'border: 2px black solid; background-color: pink;');
+
+const h1Tag = document.createElement('h1');
+h1Tag.textContent= 'I\'m in a div';
+const p2Tag = document.createElement('p');
+p2Tag.textContent = 'ME TOO!';
+
+divContainer.appendChild(h1Tag);
+divContainer.appendChild(p2Tag);
+
+container.appendChild(divContainer);
