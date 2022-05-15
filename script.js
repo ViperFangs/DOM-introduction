@@ -25,3 +25,9 @@ divContainer.appendChild(h1Tag);
 divContainer.appendChild(p2Tag);
 
 container.appendChild(divContainer);
+
+const button = document.createElement('button');
+button.setAttribute('onclick', 'alert("Hello World");');
+button.textContent = 'Click me';
+
+container.appendChild(button);
