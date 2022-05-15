@@ -90,6 +90,7 @@ but the JavaScript changes what the browser renders.
 Basically JS just changes that current instance when it is run
 but won't change the actual HTML file
 
+<
 <div id="container">
     <button id="1">Click Me</button>
     <button id="2">Click Me</button>
@@ -106,3 +107,4 @@ buttons.forEach((button) => {
     alert(button.id);
   });
 });
+>
