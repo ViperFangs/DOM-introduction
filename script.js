@@ -2,7 +2,6 @@ const container = document.querySelector('#container');
 
 const p1 = document.createElement('p');
 p1.textContent = 'Hey I\'m red';
-console.log(p1);
 container.appendChild(p1);
 
 const heading = document.createElement('h3');
@@ -26,8 +25,19 @@ divContainer.appendChild(p2Tag);
 
 container.appendChild(divContainer);
 
+function alertFunction() {
+    alert("Hello World");
+  }
+
 const button = document.createElement('button');
-button.setAttribute('onclick', 'alert("Hello World");');
+//button.setAttribute('onclick', 'alert("Hello World");');
+//button.onclick = () => alert("Hello World");
+//button.addEventListener('click', alertFunction);
+
+button.addEventListener('click', function (e) {
+    console.log(e.target.style.backgroundColor = 'blue');
+  });
+
 button.textContent = 'Click me';
 
 container.appendChild(button);
