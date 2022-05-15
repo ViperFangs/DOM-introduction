@@ -75,3 +75,17 @@ div.classList.remove('new');
 div.classList.toggle('active');                                
 // if div doesn't have class "active" then add it, or if
 // it does, then remove it
+
+div.textContent = 'Hello World!'                               
+// creates a text node containing "Hello World!" and
+// inserts it in div
+
+div.innerHTML = '<span>Hello World!</span>';                   
+// renders the HTML inside div
+
+Keep in mind that the JavaScript does not alter your HTML, 
+but the DOM - your HTML file will look the same, 
+but the JavaScript changes what the browser renders.
+
+Basically JS just changes that current instance when it is run
+but won't change the actual HTML file
