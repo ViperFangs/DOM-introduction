@@ -53,3 +53,10 @@ for (let field of Array.from(fields)) {
     help.textContent = "";
   });
 }
+
+let textarea = document.querySelector("textarea");
+  let timeout;
+  textarea.addEventListener("input", () => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => console.log("Typed!"), 500);
+  });
